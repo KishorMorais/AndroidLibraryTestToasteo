@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.heartinz.toasteo.Toasteo;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toasteo.shortMessage(this, "Toasteo toast working");
+        Toasteo.shortMessage(this, "Toasteo toast working", Toast.LENGTH_SHORT);
 
     }
 
